@@ -7,9 +7,8 @@ function HeroSection() {
         <div className="hero-text">
           <h3 className="hero-badge">✨ HANDCRAFTED WITH LOVE</h3>
 
-          <h1>
-            Krijoni Momente Magjike
-            <span> që Zgjatin Përgjithmonë</span>
+          <h1 className="hero-header">
+            Krijoni Momente Magjike që Zgjatin Përgjithmonë
           </h1>
 
           <p className="hero-description">
