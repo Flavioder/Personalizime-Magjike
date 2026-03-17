@@ -29,9 +29,26 @@ function HeroSection() {
         </div>
 
         <div className="hero-image">
-          <img img alt="Dhurata të personalizuara Personalizime Magjike" />
-          <img src="" alt="" />
-          <img src="" alt="" />
+          <div className="product-card childrenbook-card">
+            <div className="card-visual">
+              <img src="/images/children-book.jpg" alt="Children's Book" />
+            </div>
+            <h3>Children's Book</h3>
+          </div>
+
+          <div className="product-card greetingcard-card">
+            <div className="card-visual">
+              <img src="/images/kontratapremium.jpg" alt="Greeting Card" />
+            </div>
+            <h3>Greeting Card</h3>
+          </div>
+
+          <div className="product-card album-card">
+            <div className="card-visual">
+              <img src="/images/photo-album.jpg" alt="Photo Album" />
+            </div>
+            <h3>Photo Album</h3>
+          </div>
         </div>
       </div>
     </section>
