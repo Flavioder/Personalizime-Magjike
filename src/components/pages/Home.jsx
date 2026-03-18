@@ -2,6 +2,8 @@ import HeroSection from "../home/HeroSection";
 import WhyChooseUs from "../home/WhyChooseUs";
 import OurCollection from "../home/OurCollection";
 import FeaturedProduct from "../home/FeaturedProduct";
+import HowItWorks from "../home/HowItWorks";
+import Gallery from "../home/Gallery";
 function Home() {
   return (
     <>
@@ -9,6 +11,8 @@ function Home() {
       <WhyChooseUs />
       <OurCollection />
       <FeaturedProduct />
+      <HowItWorks />
+      <Gallery />
     </>
   );
 }
