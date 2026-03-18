@@ -1,0 +1,203 @@
+.footer {
+  background: #2c2727;
+  color: #f3efec;
+  padding: 42px 20px 18px;
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 0.9fr;
+  gap: 28px;
+  align-items: start;
+}
+
+.footer-brand-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.footer-logo {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: contain;
+  background: #fff;
+  padding: 2px;
+}
+
+/* BRAND TITLE */
+.footer-brand h3 {
+  font-size: 24px;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 0.3px;
+}
+
+/* DESCRIPTION */
+.footer-brand p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #cfc6c0;
+  font-family: "Inter", sans-serif;
+}
+
+/* TITLES (Produktet, Kompania, Na Ndiq) */
+.footer-links h4,
+.footer-social h4 {
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  margin-bottom: 14px;
+  color: #ffffff;
+}
+
+/* LINKS */
+.footer-links a {
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+  color: #cfc6c0;
+  margin-bottom: 10px;
+  display: block;
+  transition: 0.25s ease;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
+}
+
+/* SOCIAL ICON TEXT */
+.social-icons a {
+  font-size: 17px;
+}
+
+/* BOTTOM TEXT */
+.footer-bottom p {
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  color: #b5aca6;
+}
+
+/* BOTTOM LINKS */
+.footer-bottom-links a {
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  color: #b5aca6;
+}
+
+.footer-bottom-links a:hover {
+  color: #ffffff;
+}
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons a {
+  width: 38px;
+  height: 38px;
+  background: #3a3434;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f3efec;
+  font-size: 17px;
+  transition: 0.25s ease;
+}
+
+.social-icons a:hover {
+  background: #d6a577;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.footer-bottom {
+  max-width: 1100px;
+  margin: 24px auto 0;
+  padding-top: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.footer-bottom p {
+  font-size: 13px;
+  color: #9f9792;
+}
+
+.footer-bottom-links {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.footer-bottom-links a {
+  font-size: 13px;
+  color: #9f9792;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.footer-bottom-links a:hover {
+  color: #ffffff;
+}
+.footer a {
+  text-decoration: none;
+}
+
+@media (max-width: 900px) {
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .footer-brand p {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer {
+    padding: 36px 16px 16px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .footer-brand-top {
+    justify-content: center;
+  }
+
+  .footer-brand,
+  .footer-links,
+  .footer-social {
+    text-align: center;
+  }
+
+  .footer-brand p {
+    margin: 0 auto;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  .footer-bottom {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footer-bottom-links {
+    justify-content: center;
+  }
+}

@@ -6,7 +6,7 @@ function Navbar() {
     <header className="navbar">
       <div className="navbar-container">
         <Link to="/" className="logo">
-          <img src="./images/logoED.jpg" alt="" />
+          <img src="./images/logoED.png" alt="" />
           Personalizime <span>Magjike</span>
         </Link>
 
