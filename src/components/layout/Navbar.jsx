@@ -11,10 +11,10 @@ function Navbar() {
         </Link>
 
         <nav className="nav-menu">
-          <Link to="/products">Produktet</Link>
-          <Link to="/gallery">Galeria</Link>
-          <Link to="/howitworks">Si fuksionon</Link>
-          <Link to="/review">Reviews</Link>
+          <a href="#OurCollection">Produktet</a>
+          <a href="#Gallery">Galeria</a>
+          <a href="#how-it-works">Si Funksionon</a>
+          <a href="#Reviews">Reviews</a>
         </nav>
       </div>
     </header>

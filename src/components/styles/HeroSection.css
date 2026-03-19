@@ -8,9 +8,11 @@
 
 .hero-container {
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   align-items: center;
+  justify-content: center;
   gap: 200px;
+  
 }
 
 .hero-badge {
@@ -26,6 +28,7 @@
   font-weight: 700;
   margin-bottom: 1.5rem;
   color: #2f2a2a;
+  word-wrap:break-word;
 }
 
 .hero-description {
@@ -97,19 +100,22 @@
   color: var(--text-dark);
 }
 
+
 .hero-image {
   position: relative;
-  width: 520px;
-  height: 560px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  max-width: 420px;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 1.5rem;
+  margin: auto;
+  align-items: end;
+  
 }
 
 .hero-image::before {
   content: "";
   position: absolute;
-  width: 340px;
   height: 340px;
   background: radial-gradient(
     circle,
@@ -122,7 +128,6 @@
 }
 
 .product-card {
-  position: absolute;
   background: rgba(255, 255, 255, 0.78);
   backdrop-filter: blur(8px);
   border-radius: 30px;
@@ -131,6 +136,7 @@
   text-align: center;
   z-index: 1;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: fit-content;
 }
 
 .product-card h3 {
@@ -150,50 +156,41 @@
 
 .card-visual img {
   width: 100%;
-  height: 100%;
-  display: block;
   object-fit: cover;
+  height: 100%;
   border-radius: 22px;
   transition: transform 0.4s ease;
 }
 
 /* Card 1 */
 .childrenbook-card {
-  width: 185px;
-  height: 295px;
-  top: 35px;
-  left: 55px;
-  transform: rotate(-5deg);
-}
-
-.childrenbook-card .card-visual {
-  height: 220px;
-}
-
-/* Card 2 */
-.greetingcard-card {
-  width: 185px;
-  height: 285px;
-  top: 45px;
-  right: 55px;
+  max-width: 170px;
+  width: 100%; 
   transform: rotate(5deg);
 }
 
-.greetingcard-card .card-visual {
-  height: 210px;
+
+/* Card 2 */
+.greetingcard-card {
+  max-width: 167px;
+  transform: rotate(-5deg);
+
+  
 }
+
+
 
 /* Card 3 */
 .album-card {
-  width: 245px;
-  height: 220px;
-  top: 355px; /* kjo jep pak distancë nga kartat sipër */
-  left: 50%;
-  transform: translateX(-50%);
-}
 
-.album-card .card-visual {
-  height: 145px;
+  max-width: 200px;
+  height: auto;
+  width: 100%;
+ 
+  transform: translateX(-50%);
+  grid-column: span 2;
+
+  margin-left: 42%;
 }
 
 /* Hover */
@@ -202,11 +199,11 @@
 }
 
 .childrenbook-card:hover {
-  transform: rotate(-5deg) translateY(-6px);
+  transform: rotate(5deg) translateY(-6px);
 }
 
 .greetingcard-card:hover {
-  transform: rotate(5deg) translateY(-6px);
+  transform: rotate(-5deg) translateY(-6px);
 }
 
 .album-card:hover {
@@ -251,3 +248,4 @@
     font-size: 1rem;
   }
 }
+/************/

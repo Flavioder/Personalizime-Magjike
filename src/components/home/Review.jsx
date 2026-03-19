@@ -2,7 +2,7 @@ import "../styles/Review.css";
 
 function Review() {
   return (
-    <section className="review-section">
+    <section className="review-section" id="Reviews">
       <div className="review-container">
         <div className="review-header">
           <p className="review-label">KLIENTË TË LUMTUR</p>

@@ -23,26 +23,23 @@
 }
 
 .choose-divs {
-  display: flex;
-  grid-template-columns: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px,1fr ));
   gap: 1.5rem;
-  justify-content: center;
+  width: 85%;
+  margin: auto;
 }
 .choose-divs-style {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #fff8f2;
-  height: 260px;
-  width: 291px;
+  /* height: 260px;
+  width: 291px; */
   padding: 2rem;
   font-size: 16px;
   border-radius: 1.5rem;
-
-  /* Initial shadow */
   box-shadow: 0 2px 8px -2px rgba(0, 0, 0, 0.04);
-
-  /* Smooth transition for hover */
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .choose-divs-style:hover {

@@ -2,7 +2,7 @@ import "../styles/OurCollection.css";
 
 function OurCollection() {
   return (
-    <section className="OurCollection">
+    <section className="OurCollection" id="OurCollection">
       <div className="OurCollection-Container">
         <div className="OurCollection-content">
           <div className="collection-text-header">

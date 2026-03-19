@@ -4,6 +4,7 @@ function HeroSection() {
   return (
     <section className="hero">
       <div className="container hero-container">
+
         <div className="hero-text">
           <h3 className="hero-badge">✨ HANDCRAFTED WITH LOVE</h3>
 
@@ -27,30 +28,37 @@ function HeroSection() {
             </Link>
           </div>
         </div>
+        
 
-        <div className="hero-image">
-          <div className="product-card childrenbook-card">
-            <div className="card-visual">
-              <img src="/images/children-book.jpg" alt="Children's Book" />
-            </div>
-            <h3>Children's Book</h3>
-          </div>
+          <div className="hero-image">
 
-          <div className="product-card greetingcard-card">
-            <div className="card-visual">
-              <img src="/images/kontratapremium.jpg" alt="Greeting Card" />
+            <div className="product-card greetingcard-card">
+              <div className="card-visual">
+                <img src="/images/kontratapremium.jpg" alt="Greeting Card" />
+              </div>
+              <h3>Greeting Card</h3>
             </div>
-            <h3>Greeting Card</h3>
-          </div>
+            
+            <div className="product-card childrenbook-card">
+              <div className="card-visual">
+                <img src="/images/the-gruffalo.jpg" alt="Children's Book" />
+              </div>
+              <h3>Children's Book</h3>
+            </div>
 
-          <div className="product-card album-card">
-            <div className="card-visual">
-              <img src="/images/photo-album.jpg" alt="Photo Album" />
+
+            <div className="product-card album-card">
+              <div className="card-visual">
+                <img src="/images/filters_format(webp).webp" alt="Photo Album" />
+              </div>
+              <h3>Photo Album</h3>
             </div>
-            <h3>Photo Album</h3>
+
           </div>
-        </div>
+     
+
       </div>
+
     </section>
   );
 }

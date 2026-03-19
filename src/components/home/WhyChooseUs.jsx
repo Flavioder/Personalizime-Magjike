@@ -7,6 +7,7 @@ export default function () {
         <h1 className="choose-header">Krijuar me Zemer & Shpirt</h1>
       </div>
       <div className="choose-divs">
+
         <div className="choose-divs-style">
           <div className="choose-divs-font">
             <img src="./images/fingerprint-pattern.png" alt="" />
@@ -17,6 +18,7 @@ export default function () {
             tuaja të veçanta
           </p>
         </div>
+
         <div className="choose-divs-style">
           <div className="choose-divs-font">
             <img src="./images/heart.png" alt="" />
@@ -27,6 +29,7 @@ export default function () {
             përgjithmonë.
           </p>
         </div>
+
         <div className="choose-divs-style">
           <div className="choose-divs-font">
             <img src="./images/gem.png" alt="" />
@@ -37,16 +40,19 @@ export default function () {
             historia juaj.
           </p>
         </div>
+
         <div className="choose-divs-style">
           <div className="choose-divs-font">
             <img src="./images/zap.png" alt="" />
           </div>
+
           <h1 className="choose-divs-header">Proces i Thjeshtë</h1>
           <p className="choose-divs-text">
             Porositje e lehtë brenda pak minutash. Ne kujdesemi për gjithë
             magjinë prapa skenave.
           </p>
         </div>
+        
       </div>
     </section>
   );

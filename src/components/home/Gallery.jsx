@@ -53,7 +53,7 @@ function Gallery() {
   ];
 
   return (
-    <section className="gallery-section">
+    <section className="gallery-section" id="Gallery" >
       <div className="gallery-container">
         <div className="gallery-header">
           <p className="gallery-label">INSPIRATION</p>
