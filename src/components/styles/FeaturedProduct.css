@@ -176,25 +176,33 @@
 @media (max-width: 992px) {
   .featured-container {
     grid-template-columns: 1fr;
-    gap: 60px;
+    gap: 40px;
   }
 
   .featured-content {
-    text-align: center;
+    order: 1;
+    text-align: left;
+  }
+
+  .featured-image-side {
+    order: 2;
+    justify-content: center;
   }
 
   .featured-description {
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 100%;
   }
 
   .featured-point {
-    justify-content: center;
+    justify-content: flex-start;
     text-align: left;
   }
 
   .featured-buttons {
-    justify-content: center;
+    justify-content: flex-start;
+    max-width: 100%;
   }
 
   .featured-title {
@@ -220,19 +228,75 @@
 /* MOBILE */
 @media (max-width: 576px) {
   .featured-product {
-    padding: 80px 16px;
+    padding: 50px 16px;
+  }
+
+  .featured-container {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .featured-content {
+    order: 1;
+    text-align: left;
+  }
+
+  .featured-image-side {
+    order: 2;
+    justify-content: center;
+  }
+
+  .featured-label {
+    font-size: 13px;
+    margin-bottom: 12px;
   }
 
   .featured-title {
     font-size: 36px;
+    line-height: 1.15;
+    margin-bottom: 16px;
   }
 
   .featured-description {
     font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    max-width: 100%;
+  }
+
+  .featured-points {
+    gap: 14px;
+    margin-bottom: 24px;
+  }
+
+  .featured-point {
+    align-items: flex-start;
+    gap: 12px;
   }
 
   .featured-point p {
     font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .point-icon {
+    width: 28px;
+    height: 28px;
+    min-width: 28px;
+    font-size: 15px;
+  }
+
+  .featured-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    flex-wrap: nowrap; /* mos lejo thyerje në rresht tjetër */
+  }
+
+  .create-btn,
+  .samples-btn {
+    flex: 1; /* të ndajnë hapësirën */
+    text-align: center;
   }
 
   .featured-inner-bg {
@@ -254,6 +318,8 @@
     font-size: 13px;
     padding: 10px 18px;
     bottom: -16px;
+    right: 50%;
+    transform: translateX(50%);
   }
 
   .create-btn {
