@@ -1,6 +1,7 @@
 import Navbar from "./components/layout/Navbar";
 import Home from "./components/pages/Home";
 import Footer from "./components/layout/Footer";
+import Chatbot from "./components/home/Chatbot";
 import "./App.css";
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Navbar />
       <Home />
       <Footer />
+      <Chatbot />
     </>
   );
 }
