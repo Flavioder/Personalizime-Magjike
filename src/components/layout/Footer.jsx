@@ -31,10 +31,10 @@ function Footer() {
 
         <div className="footer-links">
           <h4>Kompania</h4>
-          <a href="#">Rreth Nesh</a>
-          <a href="#">Historia Jonë</a>
-          <a href="#">Kontakt</a>
-          <a href="#">Pyetje të Shpeshta</a>
+          <a href="/about">Rreth Nesh</a>
+          <a href="/our-story">Historia Jonë</a>
+          <a href="/contact">Kontakt</a>
+          <a href="/faq">Pyetje të Shpeshta</a>
         </div>
 
         <div className="footer-social">
