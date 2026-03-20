@@ -171,6 +171,17 @@
   font-weight: 500;
   font-family: "Inter", sans-serif;
 }
+/*ANIMATIONS*/
+.fade-left {
+  opacity: 0;
+  transform: translateX(60px);
+  transition: all 0.8s ease;
+}
+
+.fade-left.show {
+  opacity: 1;
+  transform: translateX(0);
+}
 
 /* TABLET */
 @media (max-width: 992px) {

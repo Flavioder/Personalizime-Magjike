@@ -1,6 +1,20 @@
 import "../styles/FeaturedProduct.css";
+import { useEffect } from "react";
 
 function FeaturedProduct() {
+  useEffect(() => {
+  const elements = document.querySelectorAll(".fade-left");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
+    });
+  });
+
+  elements.forEach(el => observer.observe(el));
+}, []);
   return (
     <section className="featured-product">
       <div className="featured-container">
@@ -19,7 +33,7 @@ function FeaturedProduct() {
           </div>
         </div>
 
-        <div className="featured-content">
+        <div className="featured-content fade-left">
           <p className="featured-label">PRODUKTI KRYESOR</p>
 
           <h1 className="featured-title">Libra të Personalizuar për Fëmijë</h1>

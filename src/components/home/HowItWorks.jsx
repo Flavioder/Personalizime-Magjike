@@ -1,6 +1,20 @@
 import "../styles/HowItWorks.css";
+import { useEffect } from "react";
 
 function HowItWorks() {
+  useEffect(() => {
+  const elements = document.querySelectorAll(".blur-in");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
+    });
+  });
+
+  elements.forEach(el => observer.observe(el));
+}, []);
   return (
     <section className="how-it-works" id="how-it-works">
       <div className="how-it-works-container">
@@ -9,7 +23,7 @@ function HowItWorks() {
           <h1 className="how-title">Si Ndodh Magjia</h1>
         </div>
 
-        <div className="how-steps">
+        <div className="how-steps blur-in">
           <div className="how-step">
             <div className="step-top">
               <div className="step-icon-circle">

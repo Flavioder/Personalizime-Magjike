@@ -1,5 +1,5 @@
 import "../styles/Gallery.css";
-
+import { useEffect } from "react";
 function Gallery() {
   const galleryItems = [
     {
@@ -52,6 +52,20 @@ function Gallery() {
     },
   ];
 
+  useEffect(() => {
+  const elements = document.querySelectorAll(".fade-up");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
+    });
+  });
+
+  elements.forEach(el => observer.observe(el));
+}, []);
+
   return (
     <section className="gallery-section" id="Gallery" >
       <div className="gallery-container">
@@ -59,7 +73,7 @@ function Gallery() {
           <p className="gallery-label">INSPIRATION</p>
           <h1 className="gallery-title">Gift Gallery</h1>
         </div>
-        <div className="gallery-grid">
+        <div className="gallery-grid fade-up" style={{transitionDelay:"0.1s"}}>
           {galleryItems.map((item) => (
             <div key={item.id} className={`gallery-card ${item.className}`}>
               <div className="gallery-image-wrap">

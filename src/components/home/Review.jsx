@@ -1,6 +1,21 @@
 import "../styles/Review.css";
-
+import { useEffect } from "react";
 function Review() {
+  
+useEffect(() => {
+  const elements = document.querySelectorAll(".fade-up");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
+    });
+  });
+
+  elements.forEach(el => observer.observe(el));
+}, []);
+
   return (
     <section className="review-section" id="Reviews">
       <div className="review-container">
@@ -10,7 +25,7 @@ function Review() {
         </div>
 
         <div className="review-cards">
-          <div className="review-card">
+          <div className="review-card fade-up" style={{transitionDelay:"0.1s"}}>
             <div className="review-stars">★★★★★</div>
 
             <p className="review-text">
@@ -28,7 +43,7 @@ function Review() {
             </div>
           </div>
 
-          <div className="review-card">
+          <div className="review-card fade-up" style={{transitionDelay:"0.2s"}}>
             <div className="review-stars">★★★★★</div>
 
             <p className="review-text">
@@ -46,7 +61,7 @@ function Review() {
             </div>
           </div>
 
-          <div className="review-card">
+          <div className="review-card fade-up" style={{transitionDelay:"0.3s"}}>
             <div className="review-stars">★★★★★</div>
 
             <p className="review-text">

@@ -1,6 +1,21 @@
 import "../styles/OurCollection.css";
-
+import { useEffect } from "react";
 function OurCollection() {
+
+  useEffect(() => {
+  const elements = document.querySelectorAll(".fade-up");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
+    });
+  });
+
+  elements.forEach(el => observer.observe(el));
+}, []);
+
   return (
     <section className="OurCollection" id="OurCollection">
       <div className="OurCollection-Container">
@@ -10,7 +25,7 @@ function OurCollection() {
             <h1 className="collection-head">Kategoritë e Dhuratave Magjike</h1>
           </div>
 
-          <div className="collection-cards">
+          <div className="collection-cards fade-up" style={{transitionDelay:"0.1s"}}>
             <div className="collection-card">
               <div className="collection-card-image pink-bg">
                 <img src="/images/children-book.png" alt="Children Books" />
