@@ -172,15 +172,15 @@
   font-family: "Inter", sans-serif;
 }
 /*ANIMATIONS*/
-.fade-left {
+.fade-down {
   opacity: 0;
-  transform: translateX(60px);
-  transition: all 0.8s ease;
+  transform: translateY(-60px);
+  transition: all 1s ease;
 }
 
-.fade-left.show {
+.fade-down.show {
   opacity: 1;
-  transform: translateX(0);
+  transform: translateY(0);
 }
 
 /* TABLET */

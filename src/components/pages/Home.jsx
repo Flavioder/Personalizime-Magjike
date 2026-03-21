@@ -6,6 +6,7 @@ import HowItWorks from "../home/HowItWorks";
 import Gallery from "../home/Gallery";
 import Review from "../home/Review";
 import CallToAction from "../home/CallToAction";
+import CookiePopUp from "./CookiePopUp";
 function Home() {
   return (
     <>
@@ -17,6 +18,7 @@ function Home() {
       <Gallery />
       <Review />
       <CallToAction />
+      <CookiePopUp/>
     </>
   );
 }

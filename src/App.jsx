@@ -7,19 +7,20 @@ import AboutUs from "./components/pages/AboutUs";
 import OurStory from "./components/pages/OurStory";
 import FAQ from "./components/pages/FAQ";
 import Contact from "./components/pages/Contact";
+import NotFound from "./components/pages/NotFound";
 import "./App.css";
 
 function App() {
   return (
     <>
       <Navbar />
-
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/our-story" element={<OurStory />} />
         <Route path="/faq" element={<FAQ />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/*" element={<NotFound/>}/>
       </Routes>
 
       <Footer />

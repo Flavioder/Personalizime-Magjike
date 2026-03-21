@@ -3,6 +3,7 @@ import { FaInstagram, FaFacebookF } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
 function Footer() {
+
   return (
     <footer className="footer">
       <div className="footer-container">

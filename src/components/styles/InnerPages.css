@@ -255,6 +255,33 @@
   box-shadow: 0 18px 34px rgba(201, 140, 90, 0.28);
 }
 
+/*NOT FOUND*/
+.not-found-container{
+  background: linear-gradient(135deg, #fff8f2, #f8dde3, #e9e0f8);
+  text-align: center;
+  padding-top: 10%;
+  padding-bottom: 8%;
+}
+.not-found-error{
+  font-size: 5rem;
+}
+.not-found-text{
+  font-family: "Inter";
+  font-weight: 600;
+  line-height: 2rem;
+  font-size: 1.3rem;
+}
+.not-found-redirect{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3%;
+}
+.redirect-text{
+  font-family: "Inter";
+  margin-right: 2%;
+}
+
 @media (max-width: 992px) {
   .two-columns,
   .three-columns,

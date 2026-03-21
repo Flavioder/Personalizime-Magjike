@@ -1,0 +1,72 @@
+.pop-up-container{
+    width: 40%;
+    background: rgba(255, 248, 242, 0.92);
+    margin-left: 2%;
+    margin-bottom: 2%;
+    position: sticky;
+    bottom: 2%;
+    left: 0px;
+    z-index: 10000000;
+    border: 1px solid black;
+    padding: 25px;
+}
+.pop-up-header{
+    font-size: 1.2em;
+    margin-bottom: 0.5rem;
+    color: #3a3737;
+
+}
+.pop-up-text{
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+    font-family: "Inter";
+    color: #5c5555;
+}
+.pop-up-btn-container{
+    display: flex;
+    justify-content: right;
+}
+.decline-btn{
+    font-size: 0.8rem;
+    padding: 12px 45px;
+    font-family: "Inter";
+    line-height: 1.15rem;
+    font-weight: 600;
+    border: 2px solid rgb(252, 179, 251);
+    color: black;
+    margin-right: 5%;
+
+}
+.accept-btn{
+    font-size: 0.8rem;
+    padding: 12px 10px;
+    font-family: "Inter";
+    line-height: 1.15rem;
+    font-weight: 600;
+    background-color: rgb(252, 179, 251);
+    border: none;
+    color: black;
+}
+/*ANIMATIONS*/
+.fade-up1 {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 1.5s ease;
+}
+
+.fade-up1.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+/*MAKE COOKIE POP UP INVISIBLE*/
+.inv-animation {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.inv-animation.show {
+ 
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 0.5s ease;
+}

@@ -3,7 +3,7 @@ import { useEffect } from "react";
 
 function FeaturedProduct() {
   useEffect(() => {
-    const elements = document.querySelectorAll(".fade-left");
+    const elements = document.querySelectorAll(".fade-down");
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -33,7 +33,7 @@ function FeaturedProduct() {
           </div>
         </div>
 
-        <div className="featured-content ">
+        <div className="featured-content fade-down" style={{transitionDelay:"0.1s"}}>
           <p className="featured-label">PRODUKTI KRYESOR</p>
 
           <h1 className="featured-title">Libra të Personalizuar për Fëmijë</h1>
