@@ -16,7 +16,7 @@ function CallToAction() {
         </p>
 
         <div className="cta-buttons">
-          <a href="/" className="cta-primary-btn">
+          <a href="/contact" className="cta-primary-btn">
             Fillo Tani
           </a>
 

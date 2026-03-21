@@ -1,20 +1,21 @@
 import "../styles/OurCollection.css";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
+
 function OurCollection() {
-
   useEffect(() => {
-  const elements = document.querySelectorAll(".fade-up");
+    const elements = document.querySelectorAll(".fade-up");
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("show");
-      }
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        }
+      });
     });
-  });
 
-  elements.forEach(el => observer.observe(el));
-}, []);
+    elements.forEach((el) => observer.observe(el));
+  }, []);
 
   return (
     <section className="OurCollection" id="OurCollection">
@@ -25,7 +26,11 @@ function OurCollection() {
             <h1 className="collection-head">Kategoritë e Dhuratave Magjike</h1>
           </div>
 
-          <div className="collection-cards fade-up" style={{transitionDelay:"0.1s"}}>
+          <div
+            className="collection-cards fade-up"
+            style={{ transitionDelay: "0.1s" }}
+          >
+            {/* 1 */}
             <div className="collection-card">
               <div className="collection-card-image pink-bg">
                 <img src="/images/children-book.png" alt="Children Books" />
@@ -36,10 +41,11 @@ function OurCollection() {
                   Kthejeni fëmijën tuaj në heroin e historisë së tij me libra të
                   personalizuar plot magji.
                 </p>
-                <a href="#">Explore →</a>
+                <Link to="/category/children-books">Explore →</Link>
               </div>
             </div>
 
+            {/* 2 */}
             <div className="collection-card">
               <div className="collection-card-image purple-bg">
                 <img src="/images/greeting-card.png" alt="Greeting Cards" />
@@ -50,10 +56,11 @@ function OurCollection() {
                   Kartolina unike për ditëlindje, festa dhe momente speciale me
                   prekjen tuaj personale.
                 </p>
-                <a href="#">Explore →</a>
+                <Link to="/category/greeting-cards">Explore →</Link>
               </div>
             </div>
 
+            {/* 3 */}
             <div className="collection-card">
               <div className="collection-card-image soft-pink-bg">
                 <img src="/images/kontratapremium.jpg" alt="Love Contracts" />
@@ -64,10 +71,11 @@ function OurCollection() {
                   Dhurata romantike dhe kreative për çifte, të personalizuara me
                   stil dhe emocion.
                 </p>
-                <a href="#">Explore →</a>
+                <Link to="/category/love-contracts">Explore →</Link>
               </div>
             </div>
 
+            {/* 4 */}
             <div className="collection-card">
               <div className="collection-card-image purple-bg">
                 <img src="/images/music-gift.png" alt="AI Music Gifts" />
@@ -78,10 +86,11 @@ function OurCollection() {
                   Krijoni këngë të personalizuara me tekstin tuaj për një
                   dhuratë vërtet të paharrueshme.
                 </p>
-                <a href="#">Explore →</a>
+                <Link to="/category/ai-music-gifts">Explore →</Link>
               </div>
             </div>
 
+            {/* 5 */}
             <div className="collection-card">
               <div className="collection-card-image cream-bg">
                 <img
@@ -95,10 +104,11 @@ function OurCollection() {
                   Transformoni fotot tuaja në ilustrime artistike dhe të veçanta
                   për çdo rast.
                 </p>
-                <a href="#">Explore →</a>
+                <Link to="/category/photo-illustrations">Explore →</Link>
               </div>
             </div>
 
+            {/* 6 */}
             <div className="collection-card">
               <div className="collection-card-image soft-pink-bg">
                 <img src="/images/photo-album.png" alt="Photo Albums" />
@@ -109,7 +119,7 @@ function OurCollection() {
                   Albume cilësore dhe elegante për të ruajtur kujtimet tuaja më
                   të bukura.
                 </p>
-                <a href="#">Explore →</a>
+                <Link to="/category/photo-albums">Explore →</Link>
               </div>
             </div>
           </div>

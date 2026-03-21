@@ -1,9 +1,9 @@
 import "../styles/Footer.css";
 import { FaInstagram, FaFacebookF } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 function Footer() {
-
   return (
     <footer className="footer">
       <div className="footer-container">
@@ -24,10 +24,10 @@ function Footer() {
 
         <div className="footer-links">
           <h4>Produktet</h4>
-          <a href="#">Libra për Fëmijë</a>
-          <a href="#">Kartolina</a>
-          <a href="#">Kontrata Dashurie</a>
-          <a href="#">Muzikë AI</a>
+          <Link to="/category/children-books">Libra për Fëmijë</Link>
+          <Link to="/category/greeting-cards">Kartolina</Link>
+          <Link to="/category/love-contracts">Kontrata Dashurie</Link>
+          <Link to="/category/ai-music-gifts">Muzikë AI</Link>
         </div>
 
         <div className="footer-links">
