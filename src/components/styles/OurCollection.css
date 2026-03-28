@@ -56,12 +56,10 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  padding: 24px;
 }
 
 .collection-card-image img {
-  width: 230px;
-  height: 230px;
+ 
   object-fit: cover;
 }
 
@@ -158,8 +156,5 @@
     height: 200px;
   }
 
-  .collection-card-image img {
-    width: 90px;
-    height: 90px;
-  }
+ 
 }

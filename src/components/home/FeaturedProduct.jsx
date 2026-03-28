@@ -21,12 +21,11 @@ function FeaturedProduct() {
         <div className="featured-image-side">
           <div className="featured-frame">
             <div className="featured-inner-bg">
-              <div className="featured-photo-card">
+              
                 <img
                   src="/images/bestseller.jpg"
                   alt="Personalized Children's Story Book"
                 />
-              </div>
             </div>
 
             <div className="bestseller-badge">⭐ Bestseller</div>
