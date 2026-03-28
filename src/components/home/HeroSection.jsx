@@ -2,24 +2,22 @@ import { Link } from "react-router-dom";
 import "../styles/HeroSection.css";
 import { useEffect } from "react";
 function HeroSection() {
+  useEffect(() => {
+    const elements = document.querySelectorAll(".fade-up1");
 
-useEffect(() => {
-  const elements = document.querySelectorAll(".fade-up1");
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("show");
-      }
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        }
+      });
     });
-  });
 
-  elements.forEach(el => observer.observe(el));
-}, []);
+    elements.forEach((el) => observer.observe(el));
+  }, []);
   return (
     <section className="hero">
       <div className="container hero-container">
-
         <div className="hero-text fade-up1">
           <h3 className="hero-badge">✨ HANDCRAFTED WITH LOVE</h3>
 
@@ -43,37 +41,30 @@ useEffect(() => {
             </Link>
           </div>
         </div>
-        
 
-          <div className="hero-image">
-
-            <div className="product-card greetingcard-card">
-              <div className="card-visual">
-                <img src="/images/kontratapremium.jpg" alt="Greeting Card" />
-              </div>
-              <h3>Greeting Card</h3>
+        <div className="hero-image">
+          <div className="product-card greetingcard-card">
+            <div className="card-visual">
+              <img src="/images/kontratapremium.jpg" alt="Greeting Card" />
             </div>
-            
-            <div className="product-card childrenbook-card">
-              <div className="card-visual">
-                <img src="/images/the-gruffalo.jpg" alt="Children's Book" />
-              </div>
-              <h3>Children's Book</h3>
-            </div>
-
-
-            <div className="product-card album-card">
-              <div className="card-visual">
-                <img src="/images/filters_format(webp).webp" alt="Photo Album" />
-              </div>
-              <h3>Photo Album</h3>
-            </div>
-
+            <h3>Greeting Card</h3>
           </div>
-     
 
+          <div className="product-card childrenbook-card">
+            <div className="card-visual">
+              <img src="/images/childrenbook1.jpg" alt="Children's Book" />
+            </div>
+            <h3>Children's Book</h3>
+          </div>
+
+          <div className="product-card album-card">
+            <div className="card-visual">
+              <img src="/images/filters_format(webp).webp" alt="Photo Album" />
+            </div>
+            <h3>Photo Album</h3>
+          </div>
+        </div>
       </div>
-
     </section>
   );
 }

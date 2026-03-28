@@ -7,7 +7,7 @@ const categoryData = {
     title: "Personalized Children Books",
     subtitle:
       "Libra të personalizuar për fëmijë që i kthejnë në heronjtë e historisë së tyre.",
-    image: "/images/story-book-cover.jpg",
+    image: "/images/libratefemijve.jpg",
     description:
       "Kjo kategori është krijuar për të sjellë magji në botën e fëmijëve. Me ilustrime të bukura, emrin e fëmijës dhe elemente të personalizuara, çdo libër bëhet një kujtim i çmuar për familjen.",
     points: [
@@ -23,7 +23,7 @@ const categoryData = {
     title: "Greeting Cards",
     subtitle:
       "Kartolina unike për ditëlindje, festa dhe momente speciale me prekje personale.",
-    image: "/images/greeting-cards.jpg",
+    image: "/images/kartolina2.jpg",
     description:
       "Kartolinat tona janë krijuar për të shprehur emocionin në mënyrën më elegante. Çdo detaj mund të përshtatet sipas mesazhit, stilit dhe rastit që dëshiron të festosh.",
     points: [
@@ -39,7 +39,7 @@ const categoryData = {
     title: "Love Contracts",
     subtitle:
       "Dhurata romantike dhe kreative për çifte, të personalizuara me stil dhe emocion.",
-    image: "/images/love-contract.jpg",
+    image: "/images/kontrat-dashurie.jpg",
     description:
       "Love Contracts janë një mënyrë origjinale dhe shumë e bukur për të surprizuar partnerin. Të personalizuara me emra, data dhe detaje të veçanta, ato krijojnë një kujtim romantik unik.",
     points: [
@@ -55,7 +55,7 @@ const categoryData = {
     title: "AI Music Gifts",
     subtitle:
       "Dhurata kreative të frymëzuara nga muzika, të krijuara për momente vërtet speciale.",
-    image: "/images/ai-music-gifts.jpg",
+    image: "/images/kengajon2.png",
     description:
       "Kjo kategori kombinon emocionin e muzikës me personalizimin modern. Një zgjedhje shumë e veçantë për ata që duan dhurata me identitet, kujtim dhe stil.",
     points: [
@@ -71,7 +71,7 @@ const categoryData = {
     title: "Photo Illustrations",
     subtitle:
       "Shndërro fotot tuaja në ilustrime artistike që mbajnë gjallë kujtimet më të bukura.",
-    image: "/images/photo-illustrations.jpg",
+    image: "/images/ilustrim4.jpg",
     description:
       "Photo Illustrations janë perfekte për të kthyer një moment të zakonshëm në një kujtim artistik. Mund të përdoren si dhuratë, dekor apo surprizë personale.",
     points: [
@@ -87,7 +87,7 @@ const categoryData = {
     title: "Photo Albums",
     subtitle:
       "Albume të personalizuara që mbledhin momentet më të bukura në një kujtim të vetëm.",
-    image: "/images/photo-albums.jpg",
+    image: "/images/album-familjar.png",
     description:
       "Albumet me foto janë mënyra ideale për të ruajtur kujtime nga udhëtime, evente, histori dashurie apo momente familjare. Çdo album mund të personalizohet sipas stilit dhe dëshirës së klientit.",
     points: [

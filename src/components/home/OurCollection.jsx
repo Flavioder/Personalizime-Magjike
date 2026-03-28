@@ -33,7 +33,10 @@ function OurCollection() {
             {/* 1 */}
             <div className="collection-card">
               <div className="collection-card-image pink-bg">
-                <img src="/images/children-book.png" alt="Children Books" />
+                <img
+                  src="/images/kopertina-libra-per-femij.jpg"
+                  alt="Children Books"
+                />
               </div>
               <div className="collection-card-body">
                 <h3>Personalized Children Books</h3>
@@ -48,7 +51,7 @@ function OurCollection() {
             {/* 2 */}
             <div className="collection-card">
               <div className="collection-card-image purple-bg">
-                <img src="/images/greeting-card.png" alt="Greeting Cards" />
+                <img src="/images/kartolina1.jpg" alt="Greeting Cards" />
               </div>
               <div className="collection-card-body">
                 <h3>Greeting Cards</h3>
@@ -78,7 +81,7 @@ function OurCollection() {
             {/* 4 */}
             <div className="collection-card">
               <div className="collection-card-image purple-bg">
-                <img src="/images/music-gift.png" alt="AI Music Gifts" />
+                <img src="/images/kengajon.png" alt="AI Music Gifts" />
               </div>
               <div className="collection-card-body">
                 <h3>AI Music Gifts</h3>
@@ -93,10 +96,7 @@ function OurCollection() {
             {/* 5 */}
             <div className="collection-card">
               <div className="collection-card-image cream-bg">
-                <img
-                  src="/images/photo-illustration.png"
-                  alt="Photo Illustrations"
-                />
+                <img src="/images/fotoilustrim.jpg" alt="Photo Illustrations" />
               </div>
               <div className="collection-card-body">
                 <h3>Photo Illustrations</h3>
@@ -111,7 +111,10 @@ function OurCollection() {
             {/* 6 */}
             <div className="collection-card">
               <div className="collection-card-image soft-pink-bg">
-                <img src="/images/photo-album.png" alt="Photo Albums" />
+                <img
+                  src="/images/filters_format(webp).webp"
+                  alt="Photo Albums"
+                />
               </div>
               <div className="collection-card-body">
                 <h3>Photo Albums</h3>

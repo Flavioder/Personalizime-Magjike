@@ -23,7 +23,7 @@ function FeaturedProduct() {
             <div className="featured-inner-bg">
               <div className="featured-photo-card">
                 <img
-                  src="/images/story-book-cover.jpg"
+                  src="/images/bestseller.jpg"
                   alt="Personalized Children's Story Book"
                 />
               </div>
@@ -33,7 +33,10 @@ function FeaturedProduct() {
           </div>
         </div>
 
-        <div className="featured-content fade-down" style={{transitionDelay:"0.1s"}}>
+        <div
+          className="featured-content fade-down"
+          style={{ transitionDelay: "0.1s" }}
+        >
           <p className="featured-label">PRODUKTI KRYESOR</p>
 
           <h1 className="featured-title">Libra të Personalizuar për Fëmijë</h1>

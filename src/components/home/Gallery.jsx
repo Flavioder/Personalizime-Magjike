@@ -5,75 +5,78 @@ function Gallery() {
     {
       id: 1,
       className: "small pink",
-      image: "/images/gallery-book.jpg",
+      image: "/images/liberperfemij.jpg",
       alt: "Libër për fëmijë",
     },
     {
       id: 2,
       className: "medium purple",
-      image: "/images/gallery-family.jpg",
+      image: "/images/librinenes2.jpg",
       alt: "Foto familjare",
     },
     {
       id: 3,
       className: "small cream",
-      image: "/images/gallery-card.jpg",
+      image: "/images/kartolina2.jpg",
       alt: "Kartolinë e personalizuar",
     },
     {
       id: 4,
       className: "small soft-pink",
-      image: "/images/gallery-music.jpg",
+      image: "/images/muzikai.png",
       alt: "Dhuratë muzikore",
     },
     {
       id: 5,
       className: "medium purple",
-      image: "/images/gallery-illustration.jpg",
+      image: "/images/ilustrim1.jpg",
       alt: "Ilustrim fotoje",
     },
     {
       id: 6,
       className: "medium pink",
-      image: "/images/gallery-camera.jpg",
+      image: "/images/familje.png",
       alt: "Album fotografik",
     },
     {
       id: 7,
       className: "medium cream",
-      image: "/images/gallery-love.jpg",
+      image: "/images/kontrat-dashurie.jpg",
       alt: "Dhuratë romantike",
     },
     {
       id: 8,
       className: "medium purple",
-      image: "/images/gallery-baby.jpg",
+      image: "/images/ilustrim2.jpg",
       alt: "Dhuratë për bebe",
     },
   ];
 
   useEffect(() => {
-  const elements = document.querySelectorAll(".fade-up");
+    const elements = document.querySelectorAll(".fade-up");
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("show");
-      }
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        }
+      });
     });
-  });
 
-  elements.forEach(el => observer.observe(el));
-}, []);
+    elements.forEach((el) => observer.observe(el));
+  }, []);
 
   return (
-    <section className="gallery-section" id="Gallery" >
+    <section className="gallery-section" id="Gallery">
       <div className="gallery-container">
         <div className="gallery-header">
           <p className="gallery-label">INSPIRATION</p>
           <h1 className="gallery-title">Gift Gallery</h1>
         </div>
-        <div className="gallery-grid fade-up" style={{transitionDelay:"0.1s"}}>
+        <div
+          className="gallery-grid fade-up"
+          style={{ transitionDelay: "0.1s" }}
+        >
           {galleryItems.map((item) => (
             <div key={item.id} className={`gallery-card ${item.className}`}>
               <div className="gallery-image-wrap">
