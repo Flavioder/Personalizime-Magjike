@@ -1,33 +1,58 @@
-import React from 'react'
-import "../styles/CookiePopUp.css"
-import { useEffect ,useState} from "react";
+import React, { useEffect, useState } from "react";
+import "../styles/CookiePopUp.css";
+
 function CookiePopUp() {
-    useEffect(() => {
-        const elements = document.querySelectorAll(".fade-up1");
-    
-        const observer = new IntersectionObserver((entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add("show");
-            }
-          });
-        });
-    
-        elements.forEach((el) => observer.observe(el));
-      }, []);
-      const [showCookie,updateShowCookie]=useState(true);
+  const [showCookie, setShowCookie] = useState(false);
+  const [animatePopup, setAnimatePopup] = useState(false);
+
+  useEffect(() => {
+    const cookieChoice = localStorage.getItem("cookieConsent");
+
+    if (!cookieChoice) {
+      // ⏳ delay 1.5 sekonda para se të shfaqet
+      setTimeout(() => {
+        setShowCookie(true);
+
+        setTimeout(() => {
+          setAnimatePopup(true); // fade-in
+        }, 100);
+      }, 1500);
+    }
+  }, []);
+
+  const closePopup = (type) => {
+    localStorage.setItem("cookieConsent", type);
+
+    setAnimatePopup(false); // fade-out
+
+    setTimeout(() => {
+      setShowCookie(false);
+    }, 400);
+  };
+
+  if (!showCookie) return null;
+
   return (
-    <div className={`pop-up-container fade-up1  ${showCookie==true?" ":"inv-animation show"}`} style={{transitionDelay:"1s"}}>
-            <h1 className='pop-up-header'>Your privacy is important to us.</h1>
-            <p className='pop-up-text'>We process your personal information to measure and improve our sites and service, to assist our marketing 
-                campaigns and to provide personalised content and advertising. For more information see our Privacy Policy</p>
-            <div className='pop-up-btn-container'>
-                <button className='decline-btn ' onClick={()=>{updateShowCookie(false)}}>Decline</button>
-                <button className='accept-btn' onClick={()=>{updateShowCookie(false)}}>Accept Cookie</button>
-            </div>
-        
+    <div className={`pop-up-container ${animatePopup ? "show" : "hide"}`}>
+      <h1 className="pop-up-header">Your privacy is important to us.</h1>
+
+      <p className="pop-up-text">
+        We process your personal information to measure and improve our sites
+        and service, to assist our marketing campaigns and to provide
+        personalised content and advertising.
+      </p>
+
+      <div className="pop-up-btn-container">
+        <button onClick={() => closePopup("declined")} className="decline-btn">
+          Decline
+        </button>
+
+        <button onClick={() => closePopup("accepted")} className="accept-btn">
+          Accept Cookie
+        </button>
+      </div>
     </div>
-  )
+  );
 }
 
-export default CookiePopUp
+export default CookiePopUp;

@@ -59,45 +59,6 @@
   margin-bottom: 22px;
 }
 
-.review-user {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.review-avatar {
-  width: 46px;
-  height: 46px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 22px;
-  flex-shrink: 0;
-}
-
-.pink-avatar {
-  background: #f3d9df;
-}
-
-.purple-avatar {
-  background: #ddd5ee;
-}
-
-.review-user-info h4 {
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  color: #2f2a2a;
-  margin-bottom: 3px;
-}
-
-.review-user-info p {
-  font-family: "Inter", sans-serif;
-  font-size: 14px;
-  color: rgba(47, 42, 42, 0.5);
-}
-
 /* ANIMATIONS*/
 .fade-up {
   opacity: 0;
@@ -158,19 +119,5 @@
     font-size: 15px;
     line-height: 1.55;
     margin-bottom: 18px;
-  }
-
-  .review-avatar {
-    width: 42px;
-    height: 42px;
-    font-size: 20px;
-  }
-
-  .review-user-info h4 {
-    font-size: 15px;
-  }
-
-  .review-user-info p {
-    font-size: 13px;
   }
 }

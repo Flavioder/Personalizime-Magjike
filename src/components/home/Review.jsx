@@ -1,20 +1,19 @@
 import "../styles/Review.css";
 import { useEffect } from "react";
 function Review() {
-  
-useEffect(() => {
-  const elements = document.querySelectorAll(".fade-up");
+  useEffect(() => {
+    const elements = document.querySelectorAll(".fade-up");
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("show");
-      }
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        }
+      });
     });
-  });
 
-  elements.forEach(el => observer.observe(el));
-}, []);
+    elements.forEach((el) => observer.observe(el));
+  }, []);
 
   return (
     <section className="review-section" id="Reviews">
@@ -25,58 +24,46 @@ useEffect(() => {
         </div>
 
         <div className="review-cards">
-          <div className="review-card fade-up" style={{transitionDelay:"0.1s"}}>
+          <div
+            className="review-card fade-up"
+            style={{ transitionDelay: "0.1s" }}
+          >
             <div className="review-stars">★★★★★</div>
 
             <p className="review-text">
-              "Fytyra e vajzës sime kur e pa veten si princeshë në librin e saj
-              ishte e paçmueshme! Kjo është dhurata më magjike që kemi bërë
-              ndonjëherë."
+              "Te falederoj pa mas të uroj veç te mira e paç bekimin e Zotit që
+              na bën edhe ne si prinder kaq te lumtur.Me ke emocjonuar kaq Shum
+              sa nuk me dalin fjalet ke bër një pun të shkëlqyer që un kam ngel
+              pa fjal je e veçant"
             </p>
-
-            <div className="review-user">
-              <div className="review-avatar pink-avatar">👧</div>
-              <div className="review-user-info">
-                <h4>Maria K.</h4>
-                <p>Nënë e Përkushtuar</p>
-              </div>
-            </div>
           </div>
 
-          <div className="review-card fade-up" style={{transitionDelay:"0.2s"}}>
+          <div
+            className="review-card fade-up"
+            style={{ transitionDelay: "0.2s" }}
+          >
             <div className="review-stars">★★★★★</div>
 
             <p className="review-text">
-              "Kënga e krijuar me AI për përvjetorin tonë të martesës e bëri
-              bashkëshorten time të përlotej. Një dhuratë kaq unike dhe e
-              menduar me zemër sa do ta ruajmë përgjithmonë."
+              "E degjuam, u emocionuan, nuk e prisnin..i pelqeu shumee. Rrofsh
+              ti per kohen rekord!E vleresoj angazhimin ne kohe rekord!Je shume
+              e mire. Te falenderoj pa mase."
             </p>
-
-            <div className="review-user">
-              <div className="review-avatar purple-avatar">👨</div>
-              <div className="review-user-info">
-                <h4>David R.</h4>
-                <p>Bashkëshort Romantik</p>
-              </div>
-            </div>
           </div>
 
-          <div className="review-card fade-up" style={{transitionDelay:"0.3s"}}>
+          <div
+            className="review-card fade-up"
+            style={{ transitionDelay: "0.3s" }}
+          >
             <div className="review-stars">★★★★★</div>
 
             <p className="review-text">
-              "Albumi me foto që krijova për 60-vjetorin e mamit tim e bëri të
-              qante nga gëzimi. Cilësia dhe kujdesi për çdo detaj ishin
-              mbresëlënëse!"
+              "Zemer te falenderoj shuuum shuuum shuuuum nga zemra nuk di a do
+              mundem te ta shperblej dhe une keshtu ty... Nuk di cte them jam
+              shume e lumtur e prekur dhe nje ndjesi qe nk di ta shpjegoj..Nuk
+              di tjeter si te te falederoj je vertet e veçant ,ti do jesh
+              gjithmon ne kete kujtimin tim që e ke punuar me kaq dashuri"
             </p>
-
-            <div className="review-user">
-              <div className="review-avatar pink-avatar">👩</div>
-              <div className="review-user-info">
-                <h4>Ana M.</h4>
-                <p>Bijë Plot Dashuri</p>
-              </div>
-            </div>
           </div>
         </div>
       </div>

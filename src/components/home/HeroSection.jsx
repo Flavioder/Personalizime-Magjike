@@ -32,9 +32,9 @@ function HeroSection() {
           </p>
 
           <div className="hero-buttons">
-            <Link to="/products" className="primary-btn">
+            <a href="#OurCollection" className="primary-btn">
               Shiko Produktet
-            </Link>
+            </a>
 
             <Link to="/contact" className="secondary-btn">
               Porosit Tani

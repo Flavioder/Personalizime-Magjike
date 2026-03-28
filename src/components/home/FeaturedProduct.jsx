@@ -1,5 +1,6 @@
 import "../styles/FeaturedProduct.css";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 function FeaturedProduct() {
   useEffect(() => {
@@ -21,11 +22,10 @@ function FeaturedProduct() {
         <div className="featured-image-side">
           <div className="featured-frame">
             <div className="featured-inner-bg">
-              
-                <img
-                  src="/images/bestseller.jpg"
-                  alt="Personalized Children's Story Book"
-                />
+              <img
+                src="/images/bestseller.jpg"
+                alt="Personalized Children's Story Book"
+              />
             </div>
 
             <div className="bestseller-badge">⭐ Bestseller</div>
@@ -69,11 +69,11 @@ function FeaturedProduct() {
           </div>
 
           <div className="featured-buttons">
-            <a href="/" className="create-btn">
+            <Link to="/contact" className="create-btn">
               Krijo Librin Tënd
-            </a>
+            </Link>
 
-            <a href="/" className="samples-btn">
+            <a href="#Gallery" className="samples-btn">
               Shiko Shembujt ↗
             </a>
           </div>
