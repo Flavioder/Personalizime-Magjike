@@ -1,4 +1,5 @@
 import "../styles/CallToAction.css";
+import { Link } from "react-router-dom";
 
 function CallToAction() {
   return (
@@ -16,14 +17,14 @@ function CallToAction() {
         </p>
 
         <div className="cta-buttons">
-          <a href="/contact" className="cta-primary-btn">
+          <Link to="/contact" className="cta-primary-btn">
             Fillo Tani
-          </a>
+          </Link>
 
-          <a href="/contact" className="cta-secondary-btn">
+          <Link to="/contact" className="cta-secondary-btn">
             <span className="cta-chat-icon">💬</span>
             Na Kontakto
-          </a>
+          </Link>
         </div>
       </div>
     </section>

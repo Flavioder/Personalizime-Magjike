@@ -4,17 +4,18 @@ import "../styles/CategoryPage.css";
 const categoryData = {
   "children-books": {
     badge: "Kategoria",
-    title: "Personalized Children Books",
+    title: "Libra Emocionalë të Personalizuar",
     subtitle:
-      "Libra të personalizuar për fëmijë që i kthejnë në heronjtë e historisë së tyre.",
-    image: "/images/libratefemijve.jpg",
+      "Çdo histori meriton të tregohet…dhe çdo person meriton të jetë personazhi kryesor.",
+    image: "/images/librinenes.jpg",
     description:
-      "Kjo kategori është krijuar për të sjellë magji në botën e fëmijëve. Me ilustrime të bukura, emrin e fëmijës dhe elemente të personalizuara, çdo libër bëhet një kujtim i çmuar për familjen.",
+      "Ne krijojmë libra të personalizuar që kthejnë kujtimet, dashurinë dhe momentet më të bukura në një dhuratë që mbetet përjetë. Çdo faqe është e dizajnuar me kujdes për të treguar historinë tuaj unike, duke sjellë emocione të vërteta dhe buzëqeshje tek çdo person që e hap. Nuk është thjesht një libër, por një kujtim i çmuar që ruhet dhe rikthehet sa herë dëshironi të përjetoni ato momente magjike.",
     points: [
-      "Emri i fëmijës përfshihet në histori",
-      "Ilustrime të personalizuara dhe kreative",
-      "Dhuratë ideale për ditëlindje dhe raste speciale",
-      "Kujtim unik që ruhet gjatë",
+      "Histori e personalizuar me emra dhe detaje reale",
+      "Ilustrime të bukura në stil “magjik",
+      "Mundësi për të përfshirë foto reale",
+      "Dedikim emocional i shkruar posaçërisht",
+      "Dizajn premium, i menduar për të emocionuar",
     ],
   },
 

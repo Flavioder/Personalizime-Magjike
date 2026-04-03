@@ -34,15 +34,15 @@ function OurCollection() {
             <div className="collection-card">
               <div className="collection-card-image pink-bg">
                 <img
-                  src="/images/kopertina-libra-per-femij.jpg"
+                  src="/images/LiberEmocionalFoto.jpg"
                   alt="Children Books"
                 />
               </div>
               <div className="collection-card-body">
-                <h3>Personalized Children Books</h3>
+                <h3>Libra Emocionalë të Personalizuar</h3>
                 <p>
-                  Kthejeni fëmijën tuaj në heroin e historisë së tij me libra të
-                  personalizuar plot magji.
+                  Libra të personalizuar që kthejnë kujtimet, dashurinë dhe
+                  momentet më të bukura në një dhuratë që mbetet përjetë.
                 </p>
                 <Link to="/category/children-books">Explore →</Link>
               </div>
@@ -54,7 +54,7 @@ function OurCollection() {
                 <img src="/images/kartolina1.jpg" alt="Greeting Cards" />
               </div>
               <div className="collection-card-body">
-                <h3>Greeting Cards</h3>
+                <h3>Kartolina</h3>
                 <p>
                   Kartolina unike për ditëlindje, festa dhe momente speciale me
                   prekjen tuaj personale.
@@ -69,7 +69,7 @@ function OurCollection() {
                 <img src="/images/kontratapremium.jpg" alt="Love Contracts" />
               </div>
               <div className="collection-card-body">
-                <h3>Love Contracts</h3>
+                <h3>Kontrata e Dashurise</h3>
                 <p>
                   Dhurata romantike dhe kreative për çifte, të personalizuara me
                   stil dhe emocion.
@@ -99,7 +99,7 @@ function OurCollection() {
                 <img src="/images/fotoilustrim.jpg" alt="Photo Illustrations" />
               </div>
               <div className="collection-card-body">
-                <h3>Photo Illustrations</h3>
+                <h3>Ilustrim Fotosh</h3>
                 <p>
                   Transformoni fotot tuaja në ilustrime artistike dhe të veçanta
                   për çdo rast.
@@ -117,7 +117,7 @@ function OurCollection() {
                 />
               </div>
               <div className="collection-card-body">
-                <h3>Photo Albums</h3>
+                <h3>Albume fotografike</h3>
                 <p>
                   Albume cilësore dhe elegante për të ruajtur kujtimet tuaja më
                   të bukura.

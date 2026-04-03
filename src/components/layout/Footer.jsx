@@ -32,22 +32,31 @@ function Footer() {
 
         <div className="footer-links">
           <h4>Kompania</h4>
-          <a href="/about">Rreth Nesh</a>
-          <a href="/our-story">Historia Jonë</a>
-          <a href="/contact">Kontakt</a>
-          <a href="/faq">Pyetje të Shpeshta</a>
+          <Link to="/about">Rreth Nesh</Link>
+          <Link to="/our-story">Historia Jonë</Link>
+          <Link to="/contact">Kontakt</Link>
+          <Link to="/faq">Pyetje të Shpeshta</Link>
         </div>
 
         <div className="footer-social">
           <h4>Na Ndiq</h4>
           <div className="social-icons">
-            <a href="#" aria-label="Instagram">
+            <a
+              href="https://www.instagram.com/personalizime_magjike?igsh=YW1rNHhhejFvdXZy"
+              aria-label="Instagram"
+            >
               <FaInstagram />
             </a>
-            <a href="#" aria-label="Facebook">
+            <a
+              href="https://www.facebook.com/share/1771RwDbD2/?mibextid=wwXIfr"
+              aria-label="Facebook"
+            >
               <FaFacebookF />
             </a>
-            <a href="mailto:email@example.com" aria-label="Email">
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=personalizimemagjike@gmail.com&su=Interes%20per%20porosi"
+              aria-label="Email"
+            >
               <MdEmail />
             </a>
           </div>
@@ -57,10 +66,10 @@ function Footer() {
       <div className="footer-bottom">
         <p>© 2026 Personalizime Magjike. Të gjitha të drejtat të rezervuara.</p>
 
-        <div className="footer-bottom-links">
+        {/*<div className="footer-bottom-links">
           <a href="#">Privatësia</a>
           <a href="#">Kushtet e Përdorimit</a>
-        </div>
+  </div>*/}
       </div>
     </footer>
   );
