@@ -1,4 +1,5 @@
 import { Routes, Route } from "react-router-dom";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import Navbar from "./components/layout/Navbar";
 import Home from "./components/pages/Home";
 import Footer from "./components/layout/Footer";
@@ -29,6 +30,7 @@ function App() {
 
       <Footer />
       <Chatbot />
+      <SpeedInsights />
     </>
   );
 }
