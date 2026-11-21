@@ -43,25 +43,25 @@ function HeroSection() {
         </div>
 
         <div className="hero-image">
-          <div className="product-card greetingcard-card">
+          <div className="product-card librijetes-card">
             <div className="card-visual">
-              <img src="/update-images/kartolin.jpg" alt="Greeting Card" />
+              <img src="/update-images/defrim.jpg" alt="libri jetes Card" />
             </div>
-            <h3>Greeting Card</h3>
+            <h3>Libri i jetes</h3>
           </div>
 
-          <div className="product-card childrenbook-card">
+          <div className="product-card libra-te-personalizuar">
             <div className="card-visual">
-              <img src="/images/childrenbook1.jpg" alt="Children's Book" />
+              <img src="/update-images/liber16.jpg" alt="liber" />
             </div>
-            <h3>Children's Book</h3>
+            <h3>Libra te personalizuar</h3>
           </div>
 
-          <div className="product-card album-card">
+          <div className="product-card libra-per-femije">
             <div className="card-visual">
-              <img src="/images/filters_format(webp).webp" alt="Photo Album" />
+              <img src="/update-images/joelroel.jpg" alt="libra per femije" />
             </div>
-            <h3>Photo Album</h3>
+            <h3>Libra per femije</h3>
           </div>
         </div>
       </div>

@@ -160,28 +160,43 @@
 }
 
 /* Card 1 */
-.childrenbook-card {
+.libra-te-personalizuar {
   max-width: 170px;
   width: 100%;
   transform: rotate(5deg);
 }
 
 /* Card 2 */
-.greetingcard-card {
+.librijetes-card {
   max-width: 167px;
   transform: rotate(-5deg);
 }
 
 /* Card 3 */
-.album-card {
+.libra-per-femije {
   max-width: 200px;
-  height: auto;
   width: 100%;
 
   transform: translateX(-50%);
   grid-column: span 2;
-
   margin-left: 42%;
+}
+.hero-image .libra-per-femije .card-visual {
+  aspect-ratio: 4 / 3;
+  border-radius: 12px;
+}
+
+.hero-image .libra-per-femije .card-visual img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0;
+}
+
+.hero-image .libra-per-femije:hover img {
+  transform: none;
 }
 
 /* Hover */
@@ -189,15 +204,15 @@
   box-shadow: 0 22px 45px rgba(201, 181, 198, 0.24);
 }
 
-.childrenbook-card:hover {
+.libra-te-personalizuar:hover {
   transform: rotate(5deg) translateY(-6px);
 }
 
-.greetingcard-card:hover {
+.librijetes-card:hover {
   transform: rotate(-5deg) translateY(-6px);
 }
 
-.album-card:hover {
+.libra-per-femije:hover {
   transform: translateX(-50%) translateY(-6px);
 }
 
@@ -255,15 +270,15 @@
     width: 260px;
   }
 
-  .childrenbook-card {
+  .libra-te-personalizuar {
     max-width: 150px;
   }
 
-  .greetingcard-card {
+  .librijetes-card {
     max-width: 150px;
   }
 
-  .album-card {
+  .libra-per-femije {
     max-width: 180px;
     margin-left: 50%;
   }
@@ -336,15 +351,15 @@
     transform: translateX(-50%);
   }
 
-  .childrenbook-card {
+  .librijetes-card {
     max-width: 115px;
   }
 
-  .greetingcard-card {
+  .libra-te-personalizuar {
     max-width: 115px;
   }
 
-  .album-card {
+  .libra-per-femije {
     max-width: 140px;
     margin-left: 50%;
   }
