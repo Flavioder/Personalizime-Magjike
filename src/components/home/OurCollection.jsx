@@ -96,13 +96,18 @@ function OurCollection() {
             {/* 5 */}
             <div className="collection-card">
               <div className="collection-card-image cream-bg">
-                <img src="/images/fotoilustrim.jpg" alt="Photo Illustrations" />
+                <img
+                  src="/update-images/joelroel.jpg"
+                  alt="Photo Illustrations"
+                />
               </div>
               <div className="collection-card-body">
-                <h3>Ilustrim Fotosh</h3>
+                <h3>Libra të Personalizuar për Fëmijë</h3>
                 <p>
-                  Transformoni fotot tuaja në ilustrime artistike dhe të veçanta
-                  për çdo rast.
+                  Kthejeni fëmijën tuaj në personazhin kryesor të aventurës së
+                  tij magjike. Duke përdorur fotot tuaja, ne krijojmë libra të
+                  ilustruar bukur që do të ruhen si kujtime të çmuara për gjithë
+                  jetën.
                 </p>
                 <Link to="/category/photo-illustrations">Explore →</Link>
               </div>

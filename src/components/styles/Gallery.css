@@ -7,39 +7,40 @@
   max-width: 1280px;
   margin: 0 auto;
 }
+
 .gallery-header {
   text-align: center;
   margin-bottom: 56px;
 }
 
 .gallery-label {
+  margin-bottom: 14px;
+  color: #d6a577;
   font-family: "Inter", sans-serif;
   font-size: 15px;
   font-weight: 500;
   letter-spacing: 0.14em;
-  color: #d6a577;
-  margin-bottom: 14px;
 }
 
 .gallery-title {
+  color: #2f2a2a;
   font-family: "Cormorant Garamond", serif;
   font-size: 58px;
   font-weight: 600;
   line-height: 1.05;
-  color: #2f2a2a;
 }
 
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-auto-rows: 340px 260px;
   gap: 18px;
-  align-items: start;
 }
 
 .gallery-card {
-  border-radius: 18px;
+  min-width: 0;
   overflow: hidden;
-  padding: 12px;
+  border-radius: 24px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -48,157 +49,90 @@
   box-shadow: 0 12px 30px rgba(120, 96, 110, 0.12);
 }
 
-.gallery-card.small {
-  height: 180px;
-}
-
-.gallery-card.medium {
-  height: 250px;
-}
-
-.gallery-card.tall {
-  height: 420px;
-}
-
-.gallery-card.pink {
-  background: #efd8df;
-}
-
-.gallery-card.purple {
-  background: #ddd7f0;
-}
-
-.gallery-card.cream {
-  background: #f4eee9;
-}
-
-.gallery-card.soft-pink {
-  background: #f3e1e6;
-}
-
 .gallery-image-wrap {
+  position: relative;
+  isolation: isolate;
   width: 100%;
   height: 100%;
-  border-radius: 14px;
   overflow: hidden;
-  background: rgba(255, 255, 255, 0.3);
+}
+
+.gallery-image-wrap::before {
+  content: "";
+  position: absolute;
+  inset: -20px;
+  z-index: -1;
+  background: var(--gallery-image) center / cover no-repeat;
+  filter: blur(18px);
+  opacity: 0.65;
 }
 
 .gallery-image-wrap img {
+  display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  display: block;
+  object-fit: scale-down;
+  object-position: center;
 }
 
-/* që layout-i të duket si në video */
-.gallery-card:nth-child(1) {
-  grid-column: 1;
-  grid-row: 1;
+@media (min-width: 993px) {
+  .gallery-card:nth-child(6n + 1),
+  .gallery-card:nth-child(6n + 6) {
+    grid-column: span 2;
+  }
 }
 
-.gallery-card:nth-child(2) {
-  grid-column: 2;
-  grid-row: 1 / span 2;
+.gallery-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
 }
 
-.gallery-card:nth-child(3) {
-  grid-column: 3;
-  grid-row: 1;
+.gallery-toggle {
+  padding: 12px 26px;
+  border: 1px solid #d6a577;
+  border-radius: 999px;
+  background: transparent;
+  color: #2f2a2a;
+  font: 600 15px "Inter", sans-serif;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
 }
 
-.gallery-card:nth-child(4) {
-  grid-column: 4;
-  grid-row: 1;
+.gallery-toggle:hover {
+  background-color: #faf1e9;
 }
 
-.gallery-card:nth-child(5) {
-  grid-column: 1;
-  grid-row: 2;
+.gallery-toggle:focus-visible {
+  outline: 2px solid #2f2a2a;
+  outline-offset: 4px;
 }
 
-.gallery-card:nth-child(6) {
-  grid-column: 3;
-  grid-row: 2;
-}
-
-.gallery-card:nth-child(7) {
-  grid-column: 4;
-  grid-row: 2;
-}
-
-.gallery-card:nth-child(8) {
-  grid-column: 1;
-  grid-row: 3;
-}
-
-/* lartësitë e sakta */
-.gallery-card:nth-child(1) {
-  height: 270px;
-}
-
-.gallery-card:nth-child(2) {
-  height: 335px;
-}
-
-.gallery-card:nth-child(3) {
-  height: 265px;
-}
-
-.gallery-card:nth-child(4) {
-  height: 200px;
-}
-
-.gallery-card:nth-child(5) {
-  height: 335px;
-}
-
-.gallery-card:nth-child(6) {
-  height: 335px;
-}
-
-.gallery-card:nth-child(7) {
-  height: 255px;
-}
-
-.gallery-card:nth-child(8) {
-  height: 235px;
-}
-
-/*ANIMATIONS*/
-.fade-up {
+.gallery-grid.fade-up {
   opacity: 0;
   transform: translateY(60px);
-  transition: all 0.4s ease;
+  transition: opacity 0.4s ease, transform 0.4s ease;
 }
 
-.fade-up.show {
+.gallery-grid.fade-up.show {
   opacity: 1;
   transform: translateY(0);
 }
 
-/* tablet */
+/* Tablet */
 @media (max-width: 992px) {
-  .gallery-container {
-    max-width: 1000px;
-  }
-
   .gallery-title {
     font-size: 48px;
   }
-  .gallery-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
-  }
 
-  .gallery-card:nth-child(n) {
-    grid-column: auto;
-    grid-row: auto;
-    height: 220px;
+  .gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-auto-rows: 240px;
+    gap: 16px;
   }
 }
 
-/* mobile */
+/* Telefon */
 @media (max-width: 576px) {
   .gallery-section {
     padding: 28px 16px 60px;
@@ -217,11 +151,8 @@
   }
 
   .gallery-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
+    grid-auto-rows: 250px;
     gap: 14px;
-  }
-
-  .gallery-card:nth-child(n) {
-    height: 220px;
   }
 }

@@ -69,17 +69,16 @@ const categoryData = {
 
   "photo-illustrations": {
     badge: "Kategoria",
-    title: "Photo Illustrations",
-    subtitle:
-      "Shndërro fotot tuaja në ilustrime artistike që mbajnë gjallë kujtimet më të bukura.",
-    image: "/images/ilustrim4.jpg",
+    title: "Libra të Personalizuar për Fëmijë",
+
+    image: "/update-images/keanKroi.jpg",
     description:
-      "Photo Illustrations janë perfekte për të kthyer një moment të zakonshëm në një kujtim artistik. Mund të përdoren si dhuratë, dekor apo surprizë personale.",
+      "Kthejeni fëmijën tuaj në personazhin kryesor të aventurës së tij magjike. Duke përdorur fotot tuaja, ne krijojmë libra të ilustruar bukur që do të ruhen si kujtime të çmuara për gjithë jetën.",
     points: [
       "Foto të kthyera në ilustrime kreative",
       "Stil unik dhe emocional",
-      "Ide perfekte për dekor ose dhuratë",
-      "Punim estetik dhe i personalizuar",
+      "Emër dhe dedikim i personalizuar",
+      "Kopertinë premium me materiale ekologjike",
     ],
   },
 

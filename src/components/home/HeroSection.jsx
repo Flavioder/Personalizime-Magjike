@@ -45,7 +45,7 @@ function HeroSection() {
         <div className="hero-image">
           <div className="product-card greetingcard-card">
             <div className="card-visual">
-              <img src="/images/kontratapremium.jpg" alt="Greeting Card" />
+              <img src="/update-images/kartolin.jpg" alt="Greeting Card" />
             </div>
             <h3>Greeting Card</h3>
           </div>

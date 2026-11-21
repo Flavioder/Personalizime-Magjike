@@ -23,7 +23,7 @@ function FeaturedProduct() {
           <div className="featured-frame">
             <div className="featured-inner-bg">
               <img
-                src="/images/bestseller.jpg"
+                src="/update-images/defrim.jpg"
                 alt="Personalized Children's Story Book"
               />
             </div>
@@ -38,33 +38,42 @@ function FeaturedProduct() {
         >
           <p className="featured-label">PRODUKTI KRYESOR</p>
 
-          <h1 className="featured-title">Libra të Personalizuar për Fëmijë</h1>
+          <h1 className="featured-title">Libri i Jetës</h1>
 
           <p className="featured-description">
-            Kthejeni fëmijën tuaj në personazhin kryesor të aventurës së tij
-            magjike. Duke përdorur fotot tuaja, ne krijojmë libra të ilustruar
-            bukur që do të ruhen si kujtime të çmuara për gjithë jetën.
+            Libri i Jetës është një libër unik, i krijuar posaçërisht për të
+            rrëfyer historinë e një personi përmes kujtimeve, përjetimeve,
+            njerëzve të dashur dhe momenteve që kanë shënuar jetën e tij.
+            Fotografi reale, histori të shkruar me kujdes dhe kapituj të
+            personalizuar bashkohen për të krijuar një kujtim të çmuar, që mund
+            të lexohet dhe ruhet brez pas brezi.
           </p>
 
           <div className="featured-points">
             <div className="featured-point">
               <span className="point-icon">✓</span>
-              <p>Fotoja e fëmijës tuaj shndërrohet në ilustrime</p>
+              <p>
+                Histori e shkruar dhe e personalizuar sipas jetës së personit
+              </p>
             </div>
 
             <div className="featured-point">
               <span className="point-icon">✓</span>
-              <p>Emër dhe dedikim i personalizuar</p>
+              <p>Kapituj të organizuar sipas rrugëtimit dhe kujtimeve të tij</p>
             </div>
 
             <div className="featured-point">
               <span className="point-icon">✓</span>
-              <p>Kopertinë premium me materiale ekologjike</p>
+              <p>Fotografi personale të integruara në histori</p>
             </div>
 
             <div className="featured-point">
               <span className="point-icon">✓</span>
-              <p>Tema të ndryshme historish në dispozicion</p>
+              <p>
+                {" "}
+                Dizajn elegant, faqe të personalizuara dhe libër fizik i
+                printuar
+              </p>
             </div>
           </div>
 
