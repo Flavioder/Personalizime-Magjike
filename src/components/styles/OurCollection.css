@@ -155,3 +155,35 @@
     height: 200px;
   }
 }
+.OurCollection--christmas {
+  --collection-burgundy: #80112b;
+}
+
+.OurCollection--christmas .OurCollection-Container {
+  background: linear-gradient(135deg, #fff9f0, #fae6e1 65%, #f5d4d6);
+}
+
+.OurCollection--christmas .collection-text,
+.OurCollection--christmas .collection-card-body a {
+  color: var(--collection-burgundy);
+}
+
+.OurCollection--christmas .collection-card-body a:hover {
+  color: #591024;
+}
+
+.OurCollection--christmas .collection-gift-tag {
+  display: inline-block;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 12px;
+  padding: 5px 12px;
+  border: 1px solid #e4c49c;
+  border-radius: 999px;
+  background: #fcf0e3;
+  color: var(--collection-burgundy);
+  font-family: "Inter", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1.4;
+}

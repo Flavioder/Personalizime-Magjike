@@ -1,6 +1,8 @@
-import { Link } from "react-router-dom";
-import "../styles/HeroSection.css";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
+import { CHRISTMAS_THEME_ENABLED } from "../../config/seasonalTheme.js";
+import "../styles/HeroSection.css";
+
 function HeroSection() {
   useEffect(() => {
     const elements = document.querySelectorAll(".fade-up1");
@@ -13,16 +15,27 @@ function HeroSection() {
       });
     });
 
-    elements.forEach((el) => observer.observe(el));
+    elements.forEach((element) => observer.observe(element));
+
+    return () => observer.disconnect();
   }, []);
+
   return (
-    <section className="hero">
+    <section
+      className={CHRISTMAS_THEME_ENABLED ? "hero hero--christmas" : "hero"}
+    >
       <div className="container hero-container">
         <div className="hero-text fade-up1">
-          <h3 className="hero-badge">✨ HANDCRAFTED WITH LOVE</h3>
+          <h3 className="hero-badge">
+            {CHRISTMAS_THEME_ENABLED
+              ? "✦ DHURATA PËR KRISHTLINDJE"
+              : "✨ HANDCRAFTED WITH LOVE"}
+          </h3>
 
           <h1 className="hero-header">
-            Krijoni Momente Magjike që Zgjatin Përgjithmonë
+            {CHRISTMAS_THEME_ENABLED
+              ? "Këtë Krishtlindje, dhuro një histori"
+              : "Krijoni Momente Magjike që Zgjatin Përgjithmonë"}
           </h1>
 
           <p className="hero-description">
@@ -44,22 +57,31 @@ function HeroSection() {
 
         <div className="hero-image">
           <div className="product-card librijetes-card">
+            {CHRISTMAS_THEME_ENABLED && (
+              <span className="hero-christmas-bow" aria-hidden="true">
+                🎀
+              </span>
+            )}
+
             <div className="card-visual">
-              <img src="/update-images/defrim.jpg" alt="libri jetes Card" />
+              <img src="/update-images/defrim.jpg" alt="Libri i Jetës" />
             </div>
             <h3>Libri i jetes</h3>
           </div>
 
           <div className="product-card libra-te-personalizuar">
             <div className="card-visual">
-              <img src="/update-images/liber16.jpg" alt="liber" />
+              <img
+                src="/update-images/liber16.jpg"
+                alt="Libër i personalizuar"
+              />
             </div>
             <h3>Libra te personalizuar</h3>
           </div>
 
           <div className="product-card libra-per-femije">
             <div className="card-visual">
-              <img src="/update-images/joelroel.jpg" alt="libra per femije" />
+              <img src="/update-images/joelroel.jpg" alt="Libër për fëmijë" />
             </div>
             <h3>Libra per femije</h3>
           </div>
@@ -68,4 +90,5 @@ function HeroSection() {
     </section>
   );
 }
+
 export default HeroSection;

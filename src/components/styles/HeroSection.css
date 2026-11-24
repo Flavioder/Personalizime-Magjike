@@ -374,3 +374,76 @@
     margin-top: 10px;
   }
 }
+
+.hero.hero--christmas {
+  --christmas-ruby: #80112b;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: linear-gradient(135deg, #fff9f0 8%, #f8ddd9 66%, #efc7c9);
+}
+
+.hero--christmas .hero-container {
+  position: relative;
+  z-index: 1;
+}
+
+.hero--christmas .hero-badge {
+  color: var(--christmas-ruby);
+}
+
+.hero--christmas .hero-header {
+  color: #351f25;
+}
+
+.hero--christmas .primary-btn {
+  background: var(--christmas-ruby);
+  color: #fff;
+}
+
+.hero--christmas .primary-btn:hover {
+  background: #651024;
+}
+
+.hero--christmas .librijetes-card {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-christmas-bow {
+  position: absolute;
+  top: -0.55em;
+  left: -0.25em;
+  z-index: 1;
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  line-height: 1;
+  transform: rotate(-12deg);
+  pointer-events: none;
+}
+
+.hero.hero--christmas::before,
+.hero.hero--christmas::after {
+  content: "";
+  position: absolute;
+  width: clamp(110px, 26vw, 390px);
+  aspect-ratio: 3 / 2;
+  pointer-events: none;
+
+  background:
+    radial-gradient(circle at 18% 44%, #d99a28 0 3px, #ffd875 4px, transparent 12px),
+    radial-gradient(circle at 35% 61%, #d99a28 0 2px, #ffd875 3px, transparent 10px),
+    radial-gradient(circle at 56% 39%, #d99a28 0 3px, #ffd875 4px, transparent 12px),
+    radial-gradient(circle at 65% 72%, #d99a28 0 2px, #ffd875 3px, transparent 10px),
+    url("/images/christmas-pine.png") center / contain no-repeat;
+}
+
+.hero.hero--christmas::before {
+  top: 0;
+  right: 0;
+}
+
+.hero.hero--christmas::after {
+  bottom: 0;
+  left: 0;
+  transform: rotate(180deg);
+}

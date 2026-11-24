@@ -7,10 +7,12 @@ import Gallery from "../home/Gallery";
 import Review from "../home/Review";
 import CallToAction from "../home/CallToAction";
 import CookiePopUp from "./CookiePopUp";
+import ChristmasMarquee from "../home/ChristmasMarquee.jsx";
 function Home() {
   return (
     <>
       <HeroSection />
+      <ChristmasMarquee />
       <WhyChooseUs />
       <FeaturedProduct />
       <OurCollection />

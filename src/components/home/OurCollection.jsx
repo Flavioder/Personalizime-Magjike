@@ -1,6 +1,7 @@
 import "../styles/OurCollection.css";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import { CHRISTMAS_THEME_ENABLED } from "../../config/seasonalTheme.js";
 
 function OurCollection() {
   useEffect(() => {
@@ -18,12 +19,24 @@ function OurCollection() {
   }, []);
 
   return (
-    <section className="OurCollection" id="OurCollection">
+    <section
+      id="OurCollection"
+      className={
+        CHRISTMAS_THEME_ENABLED
+          ? "OurCollection OurCollection--christmas"
+          : "OurCollection"
+      }
+    >
       <div className="OurCollection-Container">
         <div className="OurCollection-content">
           <div className="collection-text-header">
             <h1 className="collection-text">KOLEKSIONI JONË</h1>
-            <h1 className="collection-head">Kategoritë e Dhuratave Magjike</h1>
+
+            <h1 className="collection-head">
+              {CHRISTMAS_THEME_ENABLED
+                ? "Zgjidh një dhuratë për Krishtlindje"
+                : "Kategoritë e Dhuratave Magjike"}
+            </h1>
           </div>
 
           <div
@@ -40,6 +53,7 @@ function OurCollection() {
               </div>
               <div className="collection-card-body">
                 <h3>Libra Emocionalë të Personalizuar</h3>
+
                 <p>
                   Libra të personalizuar që kthejnë kujtimet, dashurinë dhe
                   momentet më të bukura në një dhuratë që mbetet përjetë.
@@ -55,6 +69,7 @@ function OurCollection() {
               </div>
               <div className="collection-card-body">
                 <h3>Kartolina</h3>
+
                 <p>
                   Kartolina unike për ditëlindje, festa dhe momente speciale me
                   prekjen tuaj personale.
@@ -100,6 +115,7 @@ function OurCollection() {
               </div>
               <div className="collection-card-body">
                 <h3>Libra të Personalizuar për Fëmijë</h3>
+
                 <p>
                   Kthejeni fëmijën tuaj në personazhin kryesor të aventurës së
                   tij magjike. Duke përdorur fotot tuaja, ne krijojmë libra të

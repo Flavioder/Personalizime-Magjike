@@ -3,6 +3,7 @@ import "../styles/FeaturedProduct.css";
 import { useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
+import { CHRISTMAS_THEME_ENABLED } from "../../config/seasonalTheme.js";
 
 function FeaturedProduct() {
   useEffect(() => {
@@ -34,11 +35,18 @@ function FeaturedProduct() {
     <section
       id="featured-product"
       ref={productRef}
-      className="featured-product"
+      className={
+        CHRISTMAS_THEME_ENABLED
+          ? "featured-product featured-product--christmas"
+          : "featured-product"
+      }
     >
       <div className="featured-container">
         <div className="featured-image-side">
           <div className="featured-frame">
+            {CHRISTMAS_THEME_ENABLED && (
+              <span className="featured-christmas-bow" aria-hidden="true" />
+            )}
             <div className="featured-inner-bg">
               <img
                 src="/update-images/defrim.jpg"
@@ -54,7 +62,11 @@ function FeaturedProduct() {
           className="featured-content fade-down"
           style={{ transitionDelay: "0.1s" }}
         >
-          <p className="featured-label">PRODUKTI KRYESOR</p>
+          <p className="featured-label">
+            {CHRISTMAS_THEME_ENABLED
+              ? "✦ IDE DHURATE PËR KRISHTLINDJE"
+              : "PRODUKTI KRYESOR"}
+          </p>
 
           <h1 className="featured-title">Libri i Jetës</h1>
 

@@ -1,0 +1,92 @@
+.christmas-marquee {
+  display: flex;
+  align-items: center;
+  background: #80112b;
+  color: #fff8ef;
+  border-block: 1px solid #deb784;
+  font-size: clamp(0.85rem, 2vw, 1rem);
+}
+
+.christmas-marquee-window {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.christmas-marquee-track {
+  display: flex;
+  width: max-content;
+  animation: christmas-marquee-scroll 32s linear infinite;
+}
+
+.christmas-marquee-group {
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: space-around;
+  min-width: 100vw;
+  white-space: nowrap;
+}
+
+.christmas-marquee-group > span {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 12px 1rem;
+}
+
+.christmas-marquee-star {
+  color: #f3cf95;
+}
+
+.christmas-marquee-track[data-paused="true"],
+.christmas-marquee-window:hover .christmas-marquee-track {
+  animation-play-state: paused;
+}
+
+.christmas-marquee-control {
+  flex-shrink: 0;
+  min-width: 44px;
+  min-height: 44px;
+  border: 0;
+  border-inline-start: 1px solid #deb78470;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+
+.christmas-marquee-control:focus-visible {
+  outline: 2px solid #f3cf95;
+  outline-offset: -4px;
+}
+
+.christmas-marquee-static {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  margin: 0;
+}
+
+@keyframes christmas-marquee-scroll {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .christmas-marquee-track,
+  .christmas-marquee-control {
+    display: none;
+  }
+
+  .christmas-marquee-static {
+    position: static;
+    width: auto;
+    height: auto;
+    clip-path: none;
+    padding: 12px 16px;
+    text-align: center;
+  }
+}
