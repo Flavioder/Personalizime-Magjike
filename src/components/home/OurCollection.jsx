@@ -35,7 +35,7 @@ function OurCollection() {
               <div className="collection-card-image pink-bg">
                 <img
                   src="/images/LiberEmocionalFoto.jpg"
-                  alt="Children Books"
+                  alt="Liber emocional"
                 />
               </div>
               <div className="collection-card-body">
@@ -44,7 +44,7 @@ function OurCollection() {
                   Libra të personalizuar që kthejnë kujtimet, dashurinë dhe
                   momentet më të bukura në një dhuratë që mbetet përjetë.
                 </p>
-                <Link to="/category/children-books">Explore →</Link>
+                <Link to="/category/libra-personalizuar">Explore →</Link>
               </div>
             </div>
 
@@ -96,10 +96,7 @@ function OurCollection() {
             {/* 5 */}
             <div className="collection-card">
               <div className="collection-card-image cream-bg">
-                <img
-                  src="/update-images/joelroel.jpg"
-                  alt="Photo Illustrations"
-                />
+                <img src="/update-images/joelroel.jpg" alt="liber femijesh" />
               </div>
               <div className="collection-card-body">
                 <h3>Libra të Personalizuar për Fëmijë</h3>
@@ -109,7 +106,7 @@ function OurCollection() {
                   ilustruar bukur që do të ruhen si kujtime të çmuara për gjithë
                   jetën.
                 </p>
-                <Link to="/category/photo-illustrations">Explore →</Link>
+                <Link to="/category/libra-per-femije">Explore →</Link>
               </div>
             </div>
 

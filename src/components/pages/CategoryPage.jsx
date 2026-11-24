@@ -2,7 +2,7 @@ import { useParams, Link } from "react-router-dom";
 import "../styles/CategoryPage.css";
 
 const categoryData = {
-  "children-books": {
+  "libra-personalizuar": {
     badge: "Kategoria",
     title: "Libra Emocionalë të Personalizuar",
     subtitle:
@@ -67,7 +67,7 @@ const categoryData = {
     ],
   },
 
-  "photo-illustrations": {
+  "libra-per-femije": {
     badge: "Kategoria",
     title: "Libra të Personalizuar për Fëmijë",
 

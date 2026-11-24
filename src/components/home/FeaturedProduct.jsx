@@ -1,5 +1,7 @@
 import "../styles/FeaturedProduct.css";
-import { useEffect } from "react";
+
+import { useEffect, useRef } from "react";
+import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 function FeaturedProduct() {
@@ -16,8 +18,24 @@ function FeaturedProduct() {
 
     elements.forEach((el) => observer.observe(el));
   }, []);
+  const { hash, key } = useLocation();
+  const productRef = useRef(null);
+
+  useEffect(() => {
+    if (hash !== "#featured-product") return;
+
+    const frame = requestAnimationFrame(() => {
+      productRef.current?.scrollIntoView({ block: "start" });
+    });
+
+    return () => cancelAnimationFrame(frame);
+  }, [hash, key]);
   return (
-    <section className="featured-product">
+    <section
+      id="featured-product"
+      ref={productRef}
+      className="featured-product"
+    >
       <div className="featured-container">
         <div className="featured-image-side">
           <div className="featured-frame">

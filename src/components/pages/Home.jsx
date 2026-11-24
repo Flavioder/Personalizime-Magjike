@@ -12,13 +12,13 @@ function Home() {
     <>
       <HeroSection />
       <WhyChooseUs />
-      <OurCollection />
       <FeaturedProduct />
+      <OurCollection />
       <HowItWorks />
       <Gallery />
       <Review />
       <CallToAction />
-      <CookiePopUp/>
+      <CookiePopUp />
     </>
   );
 }

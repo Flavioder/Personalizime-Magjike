@@ -24,7 +24,11 @@ function Footer() {
 
         <div className="footer-links">
           <h4>Produktet</h4>
-          <Link to="/category/children-books">Libra për Fëmijë</Link>
+          <Link to="/#featured-product">Libri i Jetës</Link>
+          <Link to="/category/libra-personalizuar">
+            Libra Emocionalë të Personalizuar{" "}
+          </Link>
+          <Link to="/category/libra-per-femije">Libra për Fëmijë</Link>
           <Link to="/category/greeting-cards">Kartolina</Link>
           <Link to="/category/love-contracts">Kontrata Dashurie</Link>
           <Link to="/category/ai-music-gifts">Muzikë AI</Link>
